@@ -1,0 +1,993 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@600&family=M+PLUS+Rounded+1c:wght@300;400&family=Playfair+Display:wght@500;600&display=swap");
+
+/* font-family: 'Edu SA Beginner', cursive;
+font-family: 'M PLUS Rounded 1c', sans-serif;
+font-family: 'Playfair Display', serif; Title*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =====NavBar====== */
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    background-color: #0097e6;
+    list-style-type: none;
+    box-shadow: 0px 5px 15px 0px rgb(16, 88, 170);
+    padding: 0.5vw;
+    justify-content: space-between;
+}
+
+.nav_brand a {
+    text-decoration: none;
+    color: white;
+    font-size: 2vw;
+    font-family: "Edu SA Beginner", cursive;
+    margin: 0 1.5vw;
+}
+
+.nav_brand a:hover {
+    color: rgb(11, 46, 150);
+    text-shadow: 2px 2px 3px rgb(255, 255, 255);
+}
+
+.nav_content ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav_list a {
+    margin: 0 1.4vw;
+    text-decoration: none;
+    color: white;
+    font-size: 1.4vw;
+    font-family: "Edu SA Beginner", cursive;
+    text-shadow: 2px 1px 1px rgb(0, 0, 0);
+}
+
+.nav_list a:hover {
+    color: rgb(11, 46, 150);
+    text-shadow: 2px 1px 1px rgb(255, 255, 255);
+    font-size: 1.7vw;
+}
+
+.search-form {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding: 0.3vw 0.6vw;
+    border-radius: 2vw;
+    margin-top: 2px;
+}
+
+.search-form-input {
+    border: none;
+    width: 26vw;
+    font-size: 1vw;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    padding: 0 1vw;
+    outline: none;
+    color: #0071ac;
+}
+
+.search-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: grey;
+}
+
+.cart-badge-list {
+    padding: 0.4vw;
+}
+
+
+/* =========Footer============= */
+
+.footer {
+    background-color: #0097e6;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Edu SA Beginner", cursive;
+    box-shadow: 0px -5px 15px 0px rgb(16, 88, 170);
+}
+
+.footer h1 {
+    font-size: 1.5vw;
+    margin: 1.3vw;
+}
+
+.footer_ul {
+    display: flex;
+    list-style-type: none;
+    margin-bottom: 1vw;
+    padding: 0;
+}
+
+.footer_li a {
+    text-decoration: none;
+    color: white;
+    margin: 0 1vw;
+}
+
+.footer_li a:hover {
+    color: rgb(11, 46, 150);
+    text-shadow: 2px 1px 1px rgb(255, 255, 255);
+}
+
+
+/* ===============Page Not Found============= */
+
+.pnf {
+    display: flex;
+    min-height: 65vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pnf_title {
+    font-size: 7vw;
+    font-weight: 700;
+}
+
+.pnf_heading {
+    font-weight: normal;
+}
+
+.pnf_btn {
+    color: #0097e6;
+    border: 1px solid #0097e6;
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.pnf_btn:hover {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    background-color: #0097e6;
+}
+
+
+/* ===========Contact Us/ About Us============= */
+
+.contact {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact_img {
+    width: 50%;
+    height: 90%;
+}
+
+.contact_img img {
+    width: 86%;
+    height: 100%;
+    object-fit: contain;
+    margin: 1vw;
+}
+
+#contact_Img_only {
+    width: 78%;
+}
+
+.contact_info {
+    /* background-color: #c4e9fd; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_name {
+    font-size: 2vw;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    border: 1px solid #152934;
+    background-color: #0097e6;
+    color: #ffffff;
+    padding: 0.6vw 1.7vw;
+    margin-bottom: 1.3vw;
+    border-radius: 20px;
+    box-shadow: 7px 7px 15px #0097e6;
+}
+
+.contact_para {
+    color: #217cae;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-size: 1vw;
+    margin-bottom: 2.5vw;
+    text-shadow: 1px 1px 1px #0097e6;
+}
+
+.contact_desc {
+    color: #0097e6;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-size: 1.2vw;
+}
+
+.about_para {
+    margin-top: 2.5vw;
+    color: #217cae;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-size: 1.1vw;
+    margin-bottom: 2.5vw;
+    padding: 0 5vw;
+}
+
+
+/* ============Register/Login================ */
+
+.register {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.register::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("./images/register-bg.jpeg");
+    background-size: cover;
+    background-position: center;
+    /* Set the background image */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+    /* Set the opacity value (0 to 1) */
+    z-index: -1;
+}
+
+.register h1 {
+    font-size: 2vw;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    border: 1px solid #152934;
+    background-color: #0097e6;
+    color: #ffffff;
+    padding: 0.6vw 2.5vw;
+    margin-bottom: 2.3vw;
+    margin-top: 7vw;
+    border-radius: 20px;
+    box-shadow: 7px 7px 15px #0097e6;
+}
+
+.register form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.register_field {
+    margin: 0.5vw;
+}
+
+.register_field_form {
+    border: none;
+    outline: none;
+    border: 1px solid #0097e6;
+}
+
+.register_field input {
+    height: 2.5vw;
+    width: 25vw;
+    border-radius: 39vw;
+    padding: 1vw;
+    font-size: 1vw;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    color: #0097e6;
+}
+
+.register_btn {
+    background-color: #0097e6;
+    color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 7px 7px 15px #0097e6;
+    margin-top: 1vh;
+    font-size: 1.4vw;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    padding: 0.3vw 3vw;
+    margin-bottom: 7vw;
+}
+
+.register_btn:hover {
+    background-color: white;
+    color: #0097e6;
+    font-size: 1.6vw;
+}
+
+#login_btn {
+    margin-bottom: 15.3vw;
+    margin-top: 2.5vw;
+    margin-right: 1vw;
+    font-size: 1.2vw;
+}
+
+
+/* ============Admin/User Dashboard=============== */
+
+.admin-dashboard {
+    display: flex;
+    margin: 2vw;
+    margin-bottom: 55.1vh;
+    color: #0482c5;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+.admin-dashboard-list {
+    width: 30%;
+}
+
+.admin-dashboard-list h2 {
+    padding-left: 3.5vw;
+    font-size: 1.7vw;
+    white-space: nowrap;
+}
+
+.card {
+    border: 1px solid rgb(216, 211, 211);
+    font-size: 1.3vw;
+    color: #0482c5;
+    width: 50vw;
+    padding: 2vw;
+}
+
+.user-dashboard {
+    display: flex;
+    color: #0482c5;
+}
+
+.userMenu {
+    width: 30%;
+    padding: 2.5vw;
+}
+
+.userMenu h2 {
+    padding-left: 2vw;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-size: 1.7vw;
+    white-space: nowrap;
+}
+
+
+/* ==========Customized Table(Dashboard)=========== */
+
+
+/* Create category */
+
+.table-btn {
+    border-radius: 2vw !important;
+    font-size: 0.8vw !important;
+}
+
+.table-btn-edit {
+    background-color: #0097e6 !important;
+    margin-right: 0.5vw !important;
+}
+
+.table-btn-delete {
+    background-color: rgb(251 51 51) !important;
+}
+
+.category-form_btn {
+    padding: 0.5vw 2vw;
+    font-size: 1vw;
+    border-radius: 2vw;
+    background-color: #0097e6;
+    color: white;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    margin: 1vw;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.category-form_btn:hover {
+    background-color: #3cb8f8;
+}
+
+
+/* ==================== Create Product ====================== */
+
+.create-product-dropdown {
+    width: 40vw !important;
+    border: 1px solid #0097e6 !important;
+    border-radius: 2vw !important;
+    color: #0097e6 !important;
+}
+
+.ant-select {
+    width: 100%;
+}
+
+.ant-select-selector {
+    color: #0097e6 !important;
+    font-family: "M PLUS Rounded 1c", sans-serif !important;
+}
+
+.photo-upload-button {
+    display: inline-block;
+    padding: 0.5vw;
+    background-color: #34b4f7;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 2vw;
+    width: 40vw;
+    text-align: center;
+    margin: 1vw 0vw;
+}
+
+.photo-upload-button:hover {
+    background-color: #207cac;
+}
+
+.upload-photo-preview {
+    display: flex;
+    justify-content: center;
+}
+
+.upload-photo-preview-img {
+    margin: 1vw 0;
+}
+
+.form-content {
+    margin: 1vw 0 !important;
+}
+
+.form-content-input {
+    width: 40vw;
+    padding: 0.5vw 0.7vw;
+    border-radius: 2vw;
+    font-size: 1vw;
+    color: #0097e6;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    border: 1px solid #0097e6;
+    outline: none;
+    background: transparent;
+}
+
+.form-content-input::placeholder {
+    color: #bfbfbf;
+    font-size: 0.95vw;
+}
+
+.create-product-dropdown .ant-select-selection-placeholder {
+    color: #bfbfbf;
+    font-size: 0.95vw;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+.create-product-dropdown .ant-select-item-option {
+    color: #0097e6;
+}
+
+.form-btn {
+    margin: 2vw 0;
+    display: flex;
+    justify-content: center;
+}
+
+.all-products {
+    margin-left: 15vw;
+}
+
+.create-product-btn {
+    font-size: 1vw;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    padding: 0.5vw 2vw;
+    border-radius: 2vw;
+    background-color: #0097e6;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin: 0.5vw;
+    box-shadow: 3px 5px 4px #90ceee;
+}
+
+.create-product-btn:hover {
+    background-color: #207cac;
+}
+
+.product-cards {
+    display: flex;
+    margin: 1.5vw 0;
+    flex-wrap: wrap;
+}
+
+.product-cards-list {
+    width: 17vw;
+    margin-right: 3vw;
+    text-decoration: none;
+    margin-bottom: 4vw;
+    box-shadow: 1px 7px 9px #9ed9f9;
+}
+
+.product-card {
+    padding: 0.5vw 1vw;
+    box-shadow: none !important;
+}
+
+.card-content {
+    color: #0071ac;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+.delete-product-btn {
+    font-size: 1vw;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    padding: 0.5vw 2vw;
+    border-radius: 2vw;
+    background-color: #f84949;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin: 0.5vw;
+    box-shadow: 3px 5px 4px #ee9090;
+}
+
+.delete-product-btn:hover {
+    background-color: #c10505;
+}
+
+
+/* ================ Home Page ================== */
+
+.home {
+    display: flex;
+    margin: 2vw;
+    color: #0482c5;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+.home-menu {
+    width: 15%;
+}
+
+.home h4 {
+    text-align: center;
+}
+
+.home-content {
+    width: 85%;
+    padding-left: 1.5vw;
+}
+
+.home-content h1 {
+    text-align: center;
+}
+
+.card-btns {
+    display: flex;
+}
+
+.card-btn {
+    margin-top: 1vw;
+    margin-right: 0.2vw;
+    font-size: 0.8vw;
+    background-color: #0097e6;
+    padding: 0.4vw 1vw;
+    color: white;
+    border: white;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    cursor: pointer;
+    border-radius: 0.3vw;
+}
+
+.card-btn-details {
+    background-color: #8ab6cd;
+}
+
+.card-btn:hover {
+    background-color: #065682;
+}
+
+.category-filters {
+    display: flex;
+    flex-direction: column;
+    margin: 1vw;
+    padding: 1vw;
+}
+
+.reset-filter-btn {
+    color: white;
+    background-color: #0092de;
+    border: none;
+    font-size: 0.8vw;
+    padding: 0.2vw;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    cursor: pointer;
+    border-radius: 0.3vw;
+}
+
+.reset-filter-btn:hover {
+    background-color: #8ab6cd;
+}
+
+.page-btn {
+    padding: 0.3vw 1vw;
+    font-size: 1vw;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    cursor: pointer;
+    border-radius: 0.3vw;
+    border: none;
+    background-color: #0092de;
+    color: white;
+}
+
+.page-btn:hover {
+    background-color: #8ab6cd;
+}
+
+.home-carousal {
+    padding: 3vw 3vw 2vw 1vw;
+}
+
+
+/* ===========Search Card=============== */
+
+.search-results {
+    margin: 3vw;
+    display: flex;
+    flex-direction: column;
+    color: #0482c5;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    min-height: 69vh;
+}
+
+.search-results-title {
+    text-align: center;
+}
+
+.search-results-desc {
+    text-align: center;
+    margin-top: 0.2vw;
+    margin-bottom: 3vw;
+}
+
+.search-result-products {
+    margin-left: 5vw;
+    padding-left: 3vw;
+}
+
+
+/* ============Product Details============ */
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+    color: #0482c5;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    min-height: 69vh;
+}
+
+.product-details-title {
+    text-align: center;
+    margin-top: 3vw;
+    text-shadow: 1px 4px 2px #74b8e199;
+}
+
+.product-details-info-desc {
+    display: flex;
+    padding: 0 3vw 3vw 3vw;
+}
+
+.product-details-img {
+    margin: 5vw;
+    box-shadow: 3px 5px 10px #50baf3;
+}
+
+.product-details-info-detail {
+    margin: 5vw;
+    color: #0071ac;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-size: 1vw;
+    padding-right: 11vw;
+}
+
+.card-btn-productDetails {
+    margin-right: 1.7vw;
+}
+
+.product-details-info-detail h4 {
+    margin: 0.6vw 0;
+    text-shadow: 1px 1px 1px #b9def2;
+}
+
+.similar-products {
+    padding: 3vw;
+    background-color: #73cfff2e;
+    box-shadow: 0px -10px 30px #e7f6ff;
+}
+
+.similar-products-title {
+    text-align: center;
+    margin-bottom: 4vw;
+    color: #0171ac;
+    text-shadow: 1px 4px 2px #9fdcfd;
+}
+
+.similar-cards-list {
+    width: 20vw;
+    margin-right: 3vw;
+    text-decoration: none;
+    margin-bottom: 4vw;
+    box-shadow: 1px 7px 9px #9ed9f9;
+}
+
+
+/* ===========Category Products============ */
+
+.category-products {
+    padding: 3vw 10vw;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+.category-products-title {
+    text-align: center;
+    margin-bottom: 1vw;
+    color: #0171ac;
+    text-shadow: 1px 4px 2px #9fdcfd;
+}
+
+.category-products-results {
+    color: #0092de;
+    text-align: center;
+    margin-bottom: 4vw;
+    font-size: 0.7vw;
+}
+
+
+/* ===============Cart Page===================== */
+
+.cartPage {
+    min-height: 80vh;
+    padding: 4vw;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    color: #0171ac;
+}
+
+.cartPage-heading {
+    text-align: center;
+    text-shadow: 1px 4px 2px #9fdcfd;
+    margin-bottom: 1vw;
+}
+
+.cartPage-desc {
+    color: #0092de;
+    text-align: center;
+    margin-bottom: 3.5vw;
+    font-size: 0.7vw;
+}
+
+.cartPage-contentArea {
+    display: flex;
+    color: #0092de;
+}
+
+.cartPage-contentArea-left {
+    width: 70%;
+}
+
+.cartPage-contentArea-right {
+    width: 30%;
+}
+
+.cartPage-contentArea-left-row-eachProduct {
+    display: flex;
+    box-shadow: 2px 2px 5px #1eb0ff;
+    margin: 1.5vw 7vw 1.5vw 5vw;
+    padding: 0 2vw;
+}
+
+.product-cart-img {
+    width: 33%;
+    margin: 0.5vw;
+}
+
+.product-cart-details {
+    width: 67%;
+    margin: 2vw;
+}
+
+.product-cart-details h3 {
+    text-shadow: 1px 4px 2px #9fdcfd;
+    margin-bottom: 0.5vw;
+}
+
+.product-cart-imgCard {
+    width: 75%;
+}
+
+.remove-btn {
+    margin-top: 1vw;
+    margin-right: 0.2vw;
+    font-size: 0.8vw;
+    background-color: #ff5353;
+    padding: 0.4vw 1vw;
+    color: white;
+    border: white;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    cursor: pointer;
+    border-radius: 0.3vw;
+}
+
+.remove-btn:hover {
+    background-color: #fc1414;
+}
+
+.cartSummary-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.3vw;
+}
+
+.cartSummary-heading h1 {
+    margin-bottom: 0.4vw;
+}
+
+.cartTotal {
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cartTotal h3 {
+    font-size: 1.2vw;
+    text-shadow: 1px 4px 2px #9fdcfd;
+}
+
+.checkout-btn {
+    background-color: #00a7ff;
+    color: #ffffff;
+    border-radius: 20px;
+    border: none;
+    margin-top: 1vh;
+    font-size: 0.7vw;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    padding: 0.3vw 1vw;
+    cursor: pointer;
+    margin: 0.5vw;
+}
+
+.checkout-btn:hover {
+    background-color: #0071ac;
+}
+
+.currentAddress {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.currentAddress-details {
+    margin: 1vw;
+    text-align: center;
+    font-size: 0.8vw;
+}
+
+
+/* ===============Profile================= */
+
+.user-profile {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+.user-profile form {
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-dashboard-details {
+    width: 100%;
+    padding: 2.5vw;
+    background-color: #d0efff2e;
+    min-height: 80vh;
+}
+
+.profile-update-btn {
+    background-color: #00a7ff;
+    color: #ffffff;
+    border-radius: 20px;
+    border-color: #73cfff2e;
+    margin-top: 1vh;
+    font-size: 1.4vw;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    padding: 0.3vw 3vw;
+    margin: 2vw 6vw 7vw 6vw;
+}
+
+.profile-update-btn:hover {
+    background-color: #0097e6;
+    color: #ffffff;
+}
+
+.user-profile h1 {
+    text-shadow: 1px 4px 2px #9fdcfd;
+}
+
+.payment-method {
+    margin-top: 2vw;
+}
+
+
+/* =================0rders=================== */
+
+.orders {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+.ordersTable {
+    margin: 2vw 0;
+}
+
+.orderPage-items {
+    margin: 1vw 0vw;
+}
+
+
+/* ================Categories============== */
+
+.all-categories-title {
+    color: #0071ac;
+    text-align: center;
+    margin: 2vw 1vw;
+}
+
+.all-categories {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    text-align: center;
+    min-height: 77vh;
+}
+
+.all-categories-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.all-categories-btn {
+    display: inline-block;
+    padding: 0.6vw 0vw;
+    background-color: #0092de;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 2vw;
+    margin: 0.5vw;
+    font-size: 1.1vw;
+    cursor: pointer;
+    width: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.all-categories-btn:hover {
+    background-color: #00a7ff;
+}
